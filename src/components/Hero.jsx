@@ -2,38 +2,44 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-red-50 via-white to-yellow-50">
+    <section className="relative overflow-hidden bg-gradient-to-br from-red-600 via-rose-600 to-orange-500 text-white">
       <div className="absolute inset-0 pointer-events-none" aria-hidden>
-        <div className="absolute -top-24 -right-24 w-72 h-72 bg-red-200/40 rounded-full blur-3xl" />
-        <div className="absolute -bottom-24 -left-24 w-72 h-72 bg-yellow-200/40 rounded-full blur-3xl" />
+        <div className="absolute -top-24 -right-24 w-72 h-72 bg-white/10 rounded-full blur-3xl" />
+        <div className="absolute -bottom-24 -left-24 w-72 h-72 bg-black/10 rounded-full blur-3xl" />
       </div>
-      <div className="max-w-6xl mx-auto px-6 py-16 md:py-24">
+      <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
         <div className="md:flex md:items-center md:justify-between gap-10">
           <div className="max-w-2xl">
-            <p className="uppercase tracking-widest text-red-600 font-semibold">Mad Over Italian</p>
-            <h1 className="mt-3 text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
-              Store Opening Tasting Event
+            <p className="uppercase tracking-[0.2em] text-yellow-200 font-semibold">Mad Over Italian</p>
+            <h1 className="mt-3 text-4xl md:text-6xl font-extrabold leading-tight">
+              Store Opening Tasting Night
             </h1>
-            <p className="mt-4 text-lg md:text-xl text-gray-700">
-              You’re invited to an evening of tasting our favorite Italian classics — fresh pastas, wood-fired pizzas, and indulgent desserts.
+            <p className="mt-4 text-lg md:text-xl text-white/90">
+              Join us for an evening of Italian flavours — fresh pastas, wood-fired pizzas, decadent desserts and welcome drinks.
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-4">
               <a
                 href="#tickets"
-                className="inline-flex items-center justify-center rounded-lg bg-red-600 text-white px-5 py-3 font-semibold shadow hover:bg-red-700 transition"
+                className="inline-flex items-center justify-center rounded-lg bg-white text-red-700 px-5 py-3 font-semibold shadow hover:bg-yellow-50 transition"
               >
                 Buy Tickets – $10
               </a>
               <a
                 href="https://moi.com.au" target="_blank" rel="noreferrer"
-                className="inline-flex items-center justify-center rounded-lg border border-gray-300 bg-white px-5 py-3 font-semibold text-gray-700 hover:bg-gray-50 transition"
+                className="inline-flex items-center justify-center rounded-lg border border-white/30 bg-transparent px-5 py-3 font-semibold text-white hover:bg-white/10 transition"
               >
-                Visit our website
+                Learn more
               </a>
             </div>
           </div>
-          <div className="mt-10 md:mt-0 md:w-[40%]">
-            <div className="aspect-square rounded-2xl bg-[url('https://images.unsplash.com/photo-1760764541302-e3955fbc6b2b?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxjZXJhbWljJTIwcG90dGVyeSUyMGhhbmRtYWRlfGVufDB8MHx8fDE3NjMzMDU0MTN8MA&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80')] bg-cover bg-center shadow-xl" />
+          <div className="mt-10 md:mt-0 md:w-[42%]">
+            <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/20">
+              <img
+                src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1600&auto=format&fit=crop"
+                alt="Fresh pasta and pizza from Mad Over Italian"
+                className="h-full w-full object-cover transform-gpu scale-105"
+              />
+            </div>
           </div>
         </div>
       </div>
